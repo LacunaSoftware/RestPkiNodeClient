@@ -16,6 +16,7 @@
   ],
   "author": "Ismael Medeiros by Lacuna Software",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "typescript": "^5.0.4"
   }
 }
