@@ -1,8 +1,9 @@
 {
   "name": "restpki-client",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Classes to consume Lacuna Software REST PKI",
   "main": "index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
