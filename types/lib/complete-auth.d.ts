@@ -6,4 +6,8 @@ export class CompleteAuth {
     set signature(arg: any);
     get signature(): any;
     _signature: any;
+    toModel(request: any): {
+        signature: any;
+        certificate: any;
+    };
 }
