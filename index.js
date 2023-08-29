@@ -77,6 +77,7 @@ const { XmlElementSignatureStarter } = require('./lib/xml-element-signature-star
 const { XmlIdResolutionTable } = require('./lib/xml-id-resolution-table');
 const { XmlSignatureFinisher } = require('./lib/xml-signature-finisher');
 const { XmlSignatureStarter } = require('./lib/xml-signature-starter');
+const { CompleteAuth } = require('./lib/complete-auth');
 
 exports.Authentication = Authentication;
 exports.AuthenticationResult = AuthenticationResult;
@@ -97,6 +98,7 @@ exports.SHA512DigestAlgorithm = SHA512DigestAlgorithm;
 exports.DigestAlgorithmAndValue = DigestAlgorithmAndValue;
 exports.Apis = Apis;
 exports.ApiVersion = ApiVersion;
+exports.CompleteAuth = CompleteAuth;
 exports.DigestAlgorithms = DigestAlgorithms;
 exports.SignatureAlgorithms = SignatureAlgorithms;
 exports.PKAlgorithms = PKAlgorithms;
