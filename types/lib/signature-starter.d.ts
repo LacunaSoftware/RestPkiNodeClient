@@ -13,10 +13,10 @@ export class SignatureStarter {
     _signaturePolicyId: any;
     _securityContextId: any;
     _callbackArgument: any;
-    set signerCertificate(arg: any);
-    set signaturePolicy(arg: any);
-    set securityContext(arg: any);
-    set callbackArgument(arg: any);
+    set signerCertificate(value: any);
+    set signaturePolicy(value: any);
+    set securityContext(value: any);
+    set callbackArgument(value: any);
     start(): void;
     startWithWebPki(): void;
 }

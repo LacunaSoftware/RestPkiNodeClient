@@ -7,10 +7,10 @@ export class XmlSignatureStarter extends SignatureStarter {
     setXmlToSignFromPath(path: any): void;
     setXmlToSignFromContentRaw(contentRaw: any): void;
     setXmlToSignFromContentBase64(contentBase64: any): void;
-    set xmlToSign(arg: any);
-    set xmlToSignContent(arg: any);
+    set xmlToSign(path: any);
+    set xmlToSignContent(contentRaw: any);
     setSignatureElementLocation(xpath: any, insertionOption: any, namespaceManager: any): void;
-    set signatureElementId(arg: any);
+    set signatureElementId(signatureElementId: any);
     /**
      *
      * @param isWithWebPki

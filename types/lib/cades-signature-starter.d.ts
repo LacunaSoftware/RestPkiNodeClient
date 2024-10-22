@@ -6,11 +6,11 @@ export class CadesSignatureStarter extends SignatureStarter {
     setIgnoreRevocationStatusUnknown(value: any): void;
     _ignoreRevocationStatusUnknown: boolean | undefined;
     getIgnoreRevocationStatusUnknown(): boolean | undefined;
-    set ignoreRevocationStatusUnknown(arg: boolean | undefined);
+    set ignoreRevocationStatusUnknown(value: boolean | undefined);
     get ignoreRevocationStatusUnknown(): boolean | undefined;
     setDigestAlgorithmsForDetachedSignature(list: any): void;
     getDigestAlgorithmsForDetachedSignature(): (import("./digest-algorithm").SHA1DigestAlgorithm | import("./digest-algorithm").SHA256DigestAlgorithm)[];
-    set digestAlgorithmsForDetachedSignature(arg: (import("./digest-algorithm").SHA1DigestAlgorithm | import("./digest-algorithm").SHA256DigestAlgorithm)[]);
+    set digestAlgorithmsForDetachedSignature(value: (import("./digest-algorithm").SHA1DigestAlgorithm | import("./digest-algorithm").SHA256DigestAlgorithm)[]);
     get digestAlgorithmsForDetachedSignature(): (import("./digest-algorithm").SHA1DigestAlgorithm | import("./digest-algorithm").SHA256DigestAlgorithm)[];
     setFileToSignFromPath(path: any): void;
     setFileToSignFromContentRaw(contentRaw: any): void;
@@ -20,11 +20,11 @@ export class CadesSignatureStarter extends SignatureStarter {
     /**
      * @param {string} path
      */
-    set fileToSign(arg: string);
+    set fileToSign(path: string);
     /**
      * @param {Buffer} content
      */
-    set fileToSignContent(arg: Buffer);
+    set fileToSignContent(content: Buffer);
     setCmsToCoSignFromPath(path: any): void;
     setCmsToCoSignFromContentRaw(contentRaw: any): void;
     setCmsToCoSignFromContentBase64(contentBase64: any): void;
@@ -33,15 +33,15 @@ export class CadesSignatureStarter extends SignatureStarter {
     /**
      * @param {string} path
      */
-    set cmsToCoSign(arg: string);
+    set cmsToCoSign(path: string);
     /**
      * @param {Buffer} content
      */
-    set cmsToCoSignContent(arg: Buffer);
+    set cmsToCoSignContent(content: Buffer);
     /**
      * @param {boolean} value
      */
-    set encapsulateContent(arg: boolean);
+    set encapsulateContent(value: boolean);
     start(): Promise<{
         token: any;
         toSignData: any;

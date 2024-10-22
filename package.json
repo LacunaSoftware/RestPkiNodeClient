@@ -1,6 +1,6 @@
 {
   "name": "restpki-client",
-  "version": "2.3.5",
+  "version": "2.4.0",
   "description": "Classes to consume Lacuna Software REST PKI",
   "main": "index.js",
   "types": "types/index.d.ts",
@@ -17,7 +17,10 @@
   ],
   "author": "Ismael Medeiros by Lacuna Software",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^1.7.7",
     "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

@@ -3,7 +3,7 @@ export class SignatureFinisher {
     _client: any;
     _token: any;
     _signature: any;
-    set token(arg: any);
-    set signature(arg: any);
+    set token(value: any);
+    set signature(value: any);
     finish(): void;
 }
