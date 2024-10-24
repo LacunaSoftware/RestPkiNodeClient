@@ -1,6 +1,6 @@
 {
   "name": "restpki-client",
-  "version": "2.4.0",
+  "version": "2.4.0-rc",
   "description": "Classes to consume Lacuna Software REST PKI",
   "main": "index.js",
   "types": "types/index.d.ts",
