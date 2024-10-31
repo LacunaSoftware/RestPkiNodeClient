@@ -11,7 +11,7 @@ Or informing on your project's `package.json` file:
     {
       ...
       "dependencies": {
-        "restpki-client": "2.4.0-rc"
+        "restpki-client": "2.4.0-rc1"
       }
     }
 

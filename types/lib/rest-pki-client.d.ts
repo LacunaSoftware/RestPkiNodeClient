@@ -1,6 +1,5 @@
 export class RestPkiClient {
     static _restPkiVersion: null;
-    static initializeRestPkiVersion(endpointUrl: any): null;
     constructor(endpointUrl: any, accessToken?: null, proxy?: null);
     _endpointUrl: any;
     _accessToken: any;
@@ -12,8 +11,7 @@ export class RestPkiClient {
     getTimeoutInSec(): number;
     setTimeoutInMin(value: any): void;
     setTimeoutInSec(value: any): void;
-    getRestPkiVersion(): null;
-    _restPkiVersion: any;
+    getRestPkiVersion(): Promise<null>;
     setRestPkiVersion(restPkiVersion: any): void;
     getEndpointUrl(): any;
     getAccessToken(): any;
@@ -35,8 +33,8 @@ export class RestPkiClient {
     get multipartUploadThreshold(): number;
     set multipartUploadDoubleCheck(value: boolean);
     get multipartUploadDoubleCheck(): boolean;
-    set restPkiVersion(value: null);
-    get restPkiVersion(): null;
+    set restPkiVersion(value: Promise<null>);
+    get restPkiVersion(): Promise<null>;
     getRestClient(): RestClient;
     getAuthentication(): Authentication;
     _uploadOrRead(stream: any): Promise<any>;
@@ -47,6 +45,7 @@ export class RestPkiClient {
     uploadFileFromStream(stream: any): Promise<any>;
     uploadFileFromContent(content: any): Promise<any>;
     getApiVersion(api: any): 1 | 0 | 3 | 2 | Promise<1 | 0 | 3 | 2>;
+    _restPkiVersion: ApiVersion | undefined;
     _getApiVersion(api: any, v: any): 1 | 0 | 3 | 2;
     _tryGetEndpointVersion(endpoint: any): Promise<ApiVersion>;
 }
