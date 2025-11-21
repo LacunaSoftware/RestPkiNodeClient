@@ -9,15 +9,15 @@ export class PdfMarker {
     setFileFromPath(path: any): void;
     setFileFromContentRaw(contentRaw: any): void;
     setFileFromContentBase64(contentBase64: any): void;
-    set file(arg: any);
-    set fileContent(arg: any);
-    set marks(arg: any[]);
+    set file(path: any);
+    set fileContent(contentRaw: any);
+    set marks(value: any[]);
     get marks(): any[];
-    set measurementUnits(arg: string);
+    set measurementUnits(value: string);
     get measurementUnits(): string;
-    set pageOptimization(arg: any);
+    set pageOptimization(value: any);
     get pageOptimization(): any;
-    set abortIfSigned(arg: boolean);
+    set abortIfSigned(value: boolean);
     get abortIfSigned(): boolean;
     apply(): Promise<FileResult>;
 }

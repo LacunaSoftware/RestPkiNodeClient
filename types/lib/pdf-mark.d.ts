@@ -6,19 +6,19 @@ export class PdfMark {
     _elements: any[];
     _pageOption: string;
     _pageOptionNumber: any;
-    set container(arg: any);
+    set container(value: any);
     get container(): any;
-    set borderWidth(arg: number);
+    set borderWidth(value: number);
     get borderWidth(): number;
-    set borderColor(arg: Color);
+    set borderColor(value: Color);
     get borderColor(): Color;
-    set backgroundColor(arg: Color);
+    set backgroundColor(value: Color);
     get backgroundColor(): Color;
-    set elements(arg: any[]);
+    set elements(value: any[]);
     get elements(): any[];
-    set pageOption(arg: string);
+    set pageOption(value: string);
     get pageOption(): string;
-    set pageOptionNumber(arg: any);
+    set pageOptionNumber(value: any);
     get pageOptionNumber(): any;
     toModel(): {
         container: any;

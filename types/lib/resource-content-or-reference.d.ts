@@ -2,10 +2,10 @@ export class ResourceContentOrReference {
     _url: any;
     _mimeType: any;
     _content: any;
-    set url(arg: any);
+    set url(value: any);
     get url(): any;
-    set mimeType(arg: any);
+    set mimeType(value: any);
     get mimeType(): any;
-    set content(arg: any);
+    set content(value: any);
     get content(): any;
 }

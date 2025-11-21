@@ -28,21 +28,22 @@ export class DigestAlgorithm {
 }
 export class MD5DigestAlgorithm extends DigestAlgorithm {
     constructor();
-    createCryptoHash(): any;
+    createCryptoHash(): crypto.Hash;
 }
 export class SHA1DigestAlgorithm extends DigestAlgorithm {
     constructor();
-    createCryptoHash(): any;
+    createCryptoHash(): crypto.Hash;
 }
 export class SHA256DigestAlgorithm extends DigestAlgorithm {
     constructor();
-    createCryptoHash(): any;
+    createCryptoHash(): crypto.Hash;
 }
 export class SHA384DigestAlgorithm extends DigestAlgorithm {
     constructor();
-    createCryptoHash(): any;
+    createCryptoHash(): crypto.Hash;
 }
 export class SHA512DigestAlgorithm extends DigestAlgorithm {
     constructor();
-    createCryptoHash(): any;
+    createCryptoHash(): crypto.Hash;
 }
+import crypto = require("crypto");

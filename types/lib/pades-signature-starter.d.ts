@@ -11,7 +11,7 @@ export class PadesSignatureStarter extends SignatureStarter {
     setIgnoreRevocationStatusUnknown(value: any): void;
     _ignoreRevocationStatusUnknown: any;
     getIgnoreRevocationStatusUnknown(): any;
-    set ignoreRevocationStatusUnknown(arg: any);
+    set ignoreRevocationStatusUnknown(value: any);
     get ignoreRevocationStatusUnknown(): any;
     setPdfToSignFromPath(path: any): void;
     setPdfToSignFromStream(stream: any): void;
@@ -21,21 +21,21 @@ export class PadesSignatureStarter extends SignatureStarter {
     /**
      * @param {string} path
      */
-    set pdfToSign(arg: string);
+    set pdfToSign(path: string);
     /**
      * @param {Buffer} contentRaw
      */
-    set pdfToSignContent(arg: Buffer);
-    set visualRepresentation(arg: any);
-    set bypassMarksIfSigned(arg: any);
-    set pdfMarks(arg: any);
-    set measurementUnits(arg: any);
-    set pageOptimization(arg: any);
-    set customSignatureFieldName(arg: any);
+    set pdfToSignContent(contentRaw: Buffer);
+    set visualRepresentation(value: any);
+    set bypassMarksIfSigned(value: any);
+    set pdfMarks(value: any);
+    set measurementUnits(value: any);
+    set pageOptimization(value: any);
+    set customSignatureFieldName(value: any);
     get customSignatureFieldName(): any;
-    set certificationLevel(arg: any);
+    set certificationLevel(value: any);
     get certificationLevel(): any;
-    set reason(arg: any);
+    set reason(value: any);
     get reason(): any;
     start(): Promise<{
         token: any;
@@ -62,5 +62,6 @@ export class PadesSignatureStarter extends SignatureStarter {
         reason: any;
     }>;
 }
-import { SignatureStarter } from "./signature-starter";
 import { FileReference } from "./file-reference";
+import { SignatureStarter } from "./signature-starter";
+

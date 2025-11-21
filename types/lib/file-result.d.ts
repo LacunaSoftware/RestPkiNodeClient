@@ -7,7 +7,7 @@ export class FileResult {
     writeToFile(path: any): Promise<void>;
     getFile(): FileModel;
     setFile(file: any): void;
-    set file(arg: FileModel);
+    set file(file: FileModel);
     get file(): FileModel;
 }
 import { FileModel } from "./file-model";

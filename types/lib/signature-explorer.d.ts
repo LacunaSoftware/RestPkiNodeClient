@@ -11,20 +11,20 @@ export class SignatureExplorer {
     setSignatureFileFromPath(path: any): void;
     setSignatureFileFromContentRaw(contentRaw: any): void;
     setSignatureFileFromContentBase64(contentBase64: any): void;
-    set signatureFile(arg: any);
-    set signatureFileContent(arg: any);
+    set signatureFile(path: any);
+    set signatureFileContent(contentRaw: any);
     setIgnoreRevocationStatusUnknown(value: any): void;
     getIgnoreRevocationStatusUnknown(): any;
-    set ignoreRevocationStatusUnknown(arg: any);
+    set ignoreRevocationStatusUnknown(value: any);
     get ignoreRevocationStatusUnknown(): any;
     setTrustUncertifiedSigningTime(value: any): void;
     getTrustUncertifiedSigningTime(): any;
-    set trustUncertifiedSigningTime(arg: any);
+    set trustUncertifiedSigningTime(value: any);
     get trustUncertifiedSigningTime(): any;
-    set validate(arg: any);
-    set defaultSignaturePolicyId(arg: any);
-    set acceptableExplicitPolicies(arg: any);
-    set securityContextId(arg: any);
+    set validate(validate: any);
+    set defaultSignaturePolicyId(signaturePolicyId: any);
+    set acceptableExplicitPolicies(policyCatalog: any);
+    set securityContextId(securityContextId: any);
     _getRequest(mimeType: any): {
         validate: boolean;
         defaultSignaturePolicyId: any;

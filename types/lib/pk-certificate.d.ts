@@ -8,6 +8,7 @@ export class PKCertificate {
     _issuerName: Name | undefined;
     _pkiBrazil: PkiBrazilCertificateFields | undefined;
     _pkiItaly: PkiItalyCertificateFields | undefined;
+    _pkiParaguay: PkiParaguayCertificateFields | undefined;
     _issuer: any;
     get emailAddress(): any;
     get serialNumber(): any;
@@ -17,6 +18,7 @@ export class PKCertificate {
     get issuerName(): Name | undefined;
     get pkiBrazil(): PkiBrazilCertificateFields | undefined;
     get pkiItaly(): PkiItalyCertificateFields | undefined;
+    get pkiParaguay(): PkiParaguayCertificateFields | undefined;
     get issuer(): any;
 }
 export class PkiBrazilCertificateFields {
@@ -54,6 +56,23 @@ export class PkiItalyCertificateFields {
     get certificateType(): any;
     get codiceFiscale(): any;
     get idCarta(): any;
+}
+export class PkiParaguayCertificateFields {
+    constructor(model: any);
+    _personCertificateType: any;
+    _certificateType: any;
+    _ci: any;
+    _cie: any;
+    _pasaporte: any;
+    _ruc: any;
+    _responsable: any;
+    get personCertificateType(): any;
+    get certificateType(): any;
+    get ci(): any;
+    get cie(): any;
+    get pasaporte(): any;
+    get ruc(): any;
+    get responsable(): any;
 }
 export class Name {
     constructor(model: any);

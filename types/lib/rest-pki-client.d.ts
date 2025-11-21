@@ -23,17 +23,17 @@ export class RestPkiClient {
     setProxy(value: any): void;
     setMultipartUploadThreshold(value: any): void;
     setMultipartUploadDoubleCheck(value: any): void;
-    set endpointUrl(arg: any);
+    set endpointUrl(value: any);
     get endpointUrl(): any;
-    set accessToken(arg: any);
+    set accessToken(value: any);
     get accessToken(): any;
-    set proxy(arg: any);
+    set proxy(value: any);
     get proxy(): any;
-    set multipartUploadThreshold(arg: number);
+    set multipartUploadThreshold(value: number);
     get multipartUploadThreshold(): number;
-    set multipartUploadDoubleCheck(arg: boolean);
+    set multipartUploadDoubleCheck(value: boolean);
     get multipartUploadDoubleCheck(): boolean;
-    set restPkiVersion(arg: any);
+    set restPkiVersion(value: any);
     get restPkiVersion(): any;
     getRestClient(): RestClient;
     getAuthentication(): Authentication;
@@ -48,6 +48,7 @@ export class RestPkiClient {
     _getApiVersion(api: any, v: any): 1 | 0 | 3 | 2;
     _tryGetEndpointVersion(endpoint: any): Promise<ApiVersion>;
 }
-import { RestClient } from "./rest-client";
-import { Authentication } from "./authentication";
 import { ApiVersion } from "./api-version";
+import { Authentication } from "./authentication";
+import { RestClient } from "./rest-client";
+
