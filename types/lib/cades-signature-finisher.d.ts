@@ -8,4 +8,3 @@ export class CadesSignatureFinisher extends SignatureFinisher {
 }
 import { SignatureFinisher } from "./signature-finisher";
 import { SignatureResult } from "./signature-result";
-
