@@ -62,6 +62,5 @@ export class PadesSignatureStarter extends SignatureStarter {
         reason: any;
     }>;
 }
-import { FileReference } from "./file-reference";
 import { SignatureStarter } from "./signature-starter";
-
+import { FileReference } from "./file-reference";
