@@ -12,6 +12,5 @@ export class CadesSignatureExplorer extends SignatureExplorer {
         value: any;
     }[];
 }
-import { CadesSignature } from "./cades-signature";
 import { SignatureExplorer } from "./signature-explorer";
-
+import { CadesSignature } from "./cades-signature";

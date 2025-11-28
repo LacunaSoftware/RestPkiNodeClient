@@ -60,6 +60,5 @@ export class CadesSignatureStarter extends SignatureStarter {
         encapsulateContent: boolean;
     }>;
 }
-import { FileReference } from "./file-reference";
 import { SignatureStarter } from "./signature-starter";
-
+import { FileReference } from "./file-reference";

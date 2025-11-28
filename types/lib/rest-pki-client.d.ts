@@ -48,7 +48,6 @@ export class RestPkiClient {
     _getApiVersion(api: any, v: any): 1 | 0 | 3 | 2;
     _tryGetEndpointVersion(endpoint: any): Promise<ApiVersion>;
 }
-import { ApiVersion } from "./api-version";
-import { Authentication } from "./authentication";
 import { RestClient } from "./rest-client";
-
+import { Authentication } from "./authentication";
+import { ApiVersion } from "./api-version";

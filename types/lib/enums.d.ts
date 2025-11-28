@@ -54,6 +54,7 @@ export namespace XmlInsertionOptions {
 export namespace StandardSecurityContexts {
     let PKI_BRAZIL: string;
     let PKI_ITALY: string;
+    let PKI_PARAGUAY: string;
     let WINDOWS_SERVER: string;
     let LACUNA_TEST: string;
 }
